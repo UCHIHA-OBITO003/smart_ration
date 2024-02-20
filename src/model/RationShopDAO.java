@@ -12,6 +12,7 @@ public class RationShopDAO {
 
     public void insert(int c_id, String category, int quantity) throws SQLException {
         String query = "INSERT INTO RATION_SHOP VALUES("+c_id+",'"+category+"',"+quantity+");";
-        st.executeUpdate(query); 
+        st.executeUpdate(query);
     }
+
 }

@@ -17,7 +17,7 @@ public class RationCardDAO {
     }
 
     public void delete(int id) throws SQLException{
-        String query = "DELETE FROM RATION_CARD WHRE RATION_UID = "+id;
+        String query = "DELETE FROM RATION_CARD WHERE RATION_UID = "+id;
         st.executeUpdate(query);
     }
 }
