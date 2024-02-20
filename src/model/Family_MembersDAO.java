@@ -14,4 +14,8 @@ public class Family_MembersDAO {
         String query = "INSERT INTO FAMILY_MEMBERS VALUES("+Ration_uid+",'"+names+"');";
         st.executeUpdate(query);
     }
+    public void update_Members(int Ration_uid, String names) throws SQLException {
+        String query = "UPDATE RATION_SHOP SET NAMES  = " + names + "WHERE RATION_UID=" + Ration_uid + ");";
+        st.executeUpdate(query);
+    }
 }

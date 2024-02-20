@@ -3,7 +3,7 @@ package model;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Transaction_Data {
+public class TransacTion_Data {
 
     public My_Connection conn;
     public Statement st;

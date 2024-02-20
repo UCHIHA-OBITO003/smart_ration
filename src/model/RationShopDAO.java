@@ -15,4 +15,9 @@ public class RationShopDAO {
         st.executeUpdate(query);
     }
 
+    public void update_Quantity(int c_id, int quantity,String catagory) throws SQLException{
+        String query = "UPDATE RATION_SHOP SET QUANTITY = "+quantity+"WHERE CATAGORY ="+catagory+"WHERE C_ID = "+c_id+");";
+        st.executeUpdate(query);
+    }
+
 }
