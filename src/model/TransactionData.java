@@ -13,24 +13,7 @@ public class TransactionData {
         this.amount = amount;
     }
 
-   
-    public void setRId(int rId) {
-        this.rId = rId;
-    }
 
-    public void setCId(int cId) {
-        this.cId = cId;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
-    // Getters
     public int getRId() {
         return rId;
     }
