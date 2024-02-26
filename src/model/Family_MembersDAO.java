@@ -6,7 +6,7 @@ import java.sql.Statement;
 public class Family_MembersDAO {
     public My_Connection conn;
     public Statement st;
-    Family_MembersDAO() {
+    public Family_MembersDAO() {
         conn = My_Connection.getInstance();
         st = conn.st;
     }

@@ -8,6 +8,8 @@ public class RationCard {
     private int balance;
     private String cardType;
 
+    private String user_mail;
+
     public RationCard(int rationUid, String familyHead, String address, String phoneNumber, int balance, String cardType) {
         this.rationUid = rationUid;
         this.familyHead = familyHead;
@@ -15,6 +17,7 @@ public class RationCard {
         this.phoneNumber = phoneNumber;
         this.balance = balance;
         this.cardType = cardType;
+        this.user_mail = user_mail;
     }
 
 
@@ -42,6 +45,10 @@ public class RationCard {
         this.cardType = cardType;
     }
 
+    public void setUser_mail(String user_mail) {
+        this.user_mail = user_mail;
+    }
+
 
     public int getRationUid() {
         return rationUid;
@@ -65,5 +72,9 @@ public class RationCard {
 
     public String getCardType() {
         return cardType;
+    }
+
+    public String getUser_mail() {
+        return user_mail;
     }
 }

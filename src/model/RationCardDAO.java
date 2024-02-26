@@ -6,13 +6,13 @@ import java.sql.Statement;
 public class RationCardDAO {
     public My_Connection conn;
     public Statement st;
-    RationCardDAO() {
+    public RationCardDAO() {
         conn = My_Connection.getInstance();
         st = conn.st;
     }
 
-    public void insert(int id, String head, String address, String p_no, int balance, String type) throws SQLException {
-        String query = "INSERT INTO RATION_CARD VALUES("+id+",'"+head+"','"+address+"','"+p_no+"',"+balance+",'"+type+"');";
+    public void insert(int id, String head, String address, String p_no, int balance, String type,String mail) throws SQLException {
+        String query = "INSERT INTO RATION_CARD VALUES("+id+",'"+head+"','"+address+"','"+p_no+"',"+balance+",'"+type+"','"+mail+"');";
         st.executeUpdate(query);
     }
 
@@ -38,6 +38,11 @@ public class RationCardDAO {
     }
     public void card_type(int Ration_uid, String card_type) throws SQLException {
         String query = "UPDATE RATION_CARD SET ph_no  = " + card_type+ "WHERE RATION_UID=" + Ration_uid + ");";
+        st.executeUpdate(query);
+    }
+
+    public void user_mail(int Ration_uid, String usermail) throws SQLException {
+        String query = "UPDATE RATION_CARD SET user_mail  = " + usermail+ "WHERE RATION_UID=" + Ration_uid + ");";
         st.executeUpdate(query);
     }
 

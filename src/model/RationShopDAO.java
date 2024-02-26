@@ -5,7 +5,7 @@ import java.sql.Statement;
 public class RationShopDAO {
     public My_Connection conn;
     public Statement st;
-    RationShopDAO() {
+    public RationShopDAO() {
         conn = My_Connection.getInstance();
         st = conn.st;
     }
