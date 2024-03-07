@@ -7,7 +7,7 @@ import com.twilio.type.PhoneNumber;
 import java.util.Scanner;
 
 public class get_otp {
-   
+   /
     public static void sendOTP(String recipientPhoneNumber, String otp) {
         try {
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
