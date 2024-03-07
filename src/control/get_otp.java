@@ -7,9 +7,9 @@ import com.twilio.type.PhoneNumber;
 import java.util.Scanner;
 
 public class get_otp {
-    private static final String ACCOUNT_SID = "ACa773e6d2b7b0ed10827552086546e2fc";
-    private static final String AUTH_TOKEN = "12ffa8de13162ff2da0fb40a8dc21c22";
-    private static final String TWILIO_PHONE_NUMBER = "7010801441";
+    private static final String ACCOUNT_SID = //"ACa773e6d2b7b0ed10827552086546e2fc";
+    private static final String AUTH_TOKEN = //"12ffa8de13162ff2da0fb40a8dc21c22";
+    private static final String TWILIO_PHONE_NUMBER = //"7010801441";
 
     public static void sendOTP(String recipientPhoneNumber, String otp) {
         try {
